@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { api } from '../../utils/API.js';
 import backArrow from './back-arrow.png';
+import './PasswordReset.css'
 
 const initialState = {
     password: '',
@@ -70,9 +71,10 @@ class ConfirmPasswordReset extends Component {
                         <fieldset className="ba b--transparent ph0 mh0">
                             <legend className="f4 fw6 ph0 mh0">Password Reset</legend>
                             <div className="mt3">
-                                <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
+                                <label className="db fw6 lh-copy f6" htmlFor="password">New password</label>
                                 <input className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
-                                    type="email" name="password"  id="password" style={{marginBottom: '2rem'}}
+                                    placeholder='type new password here'
+                                    type="email" name="password" id="password" style={{marginBottom: '2rem'}}
                                     onChange={(event) => this.onPasswordChange(event)} />
                             </div>
                         </fieldset>

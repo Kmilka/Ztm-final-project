@@ -161,11 +161,11 @@ class App extends Component {
           <Route path="/register">
             <Register LoadUser={this.LoadUser} />
           </Route>
-          <Route path="/password-reset">
-            <RequestPasswordReset />
-          </Route>
           <Route path="/password-reset/token/:id">
             <ConfirmPasswordReset />
+          </Route>
+          <Route path="/password-reset">
+            <RequestPasswordReset />
           </Route>
           <Route path="/home">
             <MainPage user={user}/>
