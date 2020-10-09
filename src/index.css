@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin: 0.2rem;
+  text-transform: lowercase;
+  background-color: black;
+  max-width: 18rem;
+}
+
+.invisible {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .error {
+    font-size: smaller;
+  }
+}
+
+#password, #email-address, #name {
+  line-height: normal;
+}

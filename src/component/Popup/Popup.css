@@ -1,0 +1,20 @@
+.popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  max-width: 40%;
+  height: auto;
+  background-color: honeydew;
+  border-radius: 10px;
+  padding: 0.2rem;
+  opacity: 0.8;
+  display: table;
+}
+  
+  #popupText {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
