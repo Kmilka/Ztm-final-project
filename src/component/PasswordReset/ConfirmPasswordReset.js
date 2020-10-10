@@ -11,7 +11,14 @@ const initialState = {
     passwordChangeSucceeded: false
 }
 
-class ConfirmPasswordReset extends Component {
+function ConfirmPasswordReset() {
+    const { token } = useParams();
+    return (
+        <ConfirmPasswordResetComponent token={token} />
+    )
+}
+
+class ConfirmPasswordResetComponent extends Component {
     constructor() {
         super();
         this.state = {
@@ -42,11 +49,10 @@ class ConfirmPasswordReset extends Component {
     }
     
     onSubmit = () => {
-        const { id } = useParams();
         if (this.isEmpty()) {
             return
         } else {
-            api.post('password/new', {password: this.state.password, id: id})
+            api.post('password/new', {password: this.state.password, token: this.props.token})
             .then()
             .catch(error => {
                 if (error.response) {

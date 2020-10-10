@@ -161,7 +161,7 @@ class App extends Component {
           <Route path="/register">
             <Register LoadUser={this.LoadUser} />
           </Route>
-          <Route path="/password-reset/token/:id">
+          <Route path="/password-reset/token/:token">
             <ConfirmPasswordReset />
           </Route>
           <Route path="/password-reset">
