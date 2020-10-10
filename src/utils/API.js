@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    // baseURL: "https://sm-back.herokuapp.com/",
-    baseURL: "http://localhost:4000/",
+    baseURL: "https://sm-back.herokuapp.com/",
+    // baseURL: "http://localhost:4000/",
     responseType: "json",
     headers: {
         common: {
