@@ -18,10 +18,10 @@ import MainPage from './component/MainPage/MainPage.js';
 import Modal from './component/Modal/Modal.js';
 import Profile from './component/Profile/Profile.js';
 import RequestPasswordReset from './component/PasswordReset/RequestPasswordReset.js';
+import ConfirmPasswordReset from './component/PasswordReset/ConfirmPasswordReset';
 import Navbar from './component/Navbar/Navbar.js';
 // utils
 import { api } from './utils/API.js';
-import ConfirmPasswordReset from './component/PasswordReset/ConfirmPasswordReset';
 
 
 const paramsParticles={
