@@ -51,7 +51,13 @@ class RequestPasswordReset extends Component {
                 requestSucceeded: true
             }))
             .catch(error => {
+                this.setState({
+                    error: true
+                });
                 if (error.response) {
+                    this.setState({
+                        errorMessage: error.response.data
+                    }); 
                   console.log(error.response.data);
                 } else if (error.request) {
                   console.log(error.request);
@@ -93,7 +99,7 @@ class RequestPasswordReset extends Component {
                     </div>
                 </article> :
                 <p className="white f3 pa3">
-                    A password reset link was sent to this email address: <span className="black f3 underline">{this.state.email}</span>.<br/> The link is active for 1 hour. If you can't find the email, please check the spam folder.
+                    A password reset link was sent to this email address: <span className="black f3 underline">{this.state.email}</span>.<br/> The link is active for 1 hour and for 1-time use only. If you can't find the email, please check the spam folder.
                 </p>
                 }
                 <Link to="/signin" className="f5 underline link dim black db"> <img src={backArrow} alt="backwards-arrow" style={{padding: '5px'}} />Go back to SignIn page</Link>
