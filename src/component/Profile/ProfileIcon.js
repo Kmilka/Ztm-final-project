@@ -20,7 +20,7 @@ class ProfileIcon extends Component {
 
     render() {
         return (
-            <div style={{position: 'absolute', top: 0, right: 0, padding: '20px', cursor: 'pointer'}}>
+            <div style={{position: 'absolute', top: 0, right: 0, width: '140px', padding: '20px', cursor: 'pointer'}}>
                  <img src={userPic} className="br-100 h3 w3" alt="avatar" onClick={this.toggle}/>
                 {this.state.dropdownOpen &&
                     <div onClick={this.toggle} className="flex-column bg-white br3">

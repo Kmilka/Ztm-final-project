@@ -139,11 +139,6 @@ class App extends Component {
         <div className="App">
           <Particles className='particles' params={paramsParticles} />
           <Logo />
-          {
-            isUserAuthenticated ?
-            <ProfileIcon signOut={this.signOut} /> :
-            <Navbar />
-          }
 
         <Switch>
           <Route
@@ -156,9 +151,11 @@ class App extends Component {
             }}
             />
           <Route path="/signin">
+            <Navbar />
             <SignIn LoadUser={this.LoadUser} />
           </Route>
           <Route path="/register">
+            <Navbar />
             <Register LoadUser={this.LoadUser} />
           </Route>
           <Route path="/password-reset/token/:token">
@@ -168,11 +165,12 @@ class App extends Component {
             <RequestPasswordReset />
           </Route>
           <Route path="/home">
+            <ProfileIcon signOut={this.signOut} />
             <MainPage user={user}/>
           </Route>
           <Route path="/profile-modal">
             <Modal>
-              <Profile toggleModal={this.toggleModal} user={user} LoadUser={this.LoadUser} />
+              <Profile user={user} LoadUser={this.LoadUser} />
             </Modal>
           </Route>
         </Switch>
