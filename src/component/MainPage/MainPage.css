@@ -1,9 +1,7 @@
+::placeholder {
+  color: gray;
+}
 
-  ::placeholder {
-    color: gray;
-  }
-  
-  input:focus::placeholder {
-    color: transparent;
-  }
-
+input:focus::placeholder {
+  color: transparent;
+}

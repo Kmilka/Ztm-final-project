@@ -12,9 +12,9 @@
   opacity: 0.8;
   display: table;
 }
-  
-  #popupText {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
+
+#popupText {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
-  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
+  font-family: "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -34,6 +34,8 @@ button {
   }
 }
 
-#password, #email-address, #name {
+#password,
+#email-address,
+#name {
   line-height: normal;
 }

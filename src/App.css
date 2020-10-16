@@ -22,13 +22,13 @@
 
 @media (max-width: 900px) {
   .navGrid {
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 400px) {
   .flex {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
